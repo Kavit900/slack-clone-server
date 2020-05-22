@@ -1,4 +1,4 @@
-import { Sequelize, DataTypes } from "sequelize/types";
+import {DataTypes} from 'sequelize';
 
 export default (sequelize, DataTypes) => {
     const Team = sequelize.define('team', {
@@ -13,10 +13,10 @@ export default (sequelize, DataTypes) => {
             through: 'member',
             foreignKey: 'userId',
         });
-        Team.belongsToMany(models.User, {
+        Team.belongsTo(models.User, {
             foreignKey: 'owner',
         })
     };
 
-    return User;
+    return Team;
 };

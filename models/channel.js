@@ -1,4 +1,4 @@
-import { Sequelize, DataTypes } from "sequelize/types";
+import {DataTypes} from 'sequelize';
 
 export default (sequelize, DataTypes) => {
     const Channel = sequelize.define('channel', {
@@ -13,5 +13,5 @@ export default (sequelize, DataTypes) => {
         });
     };
 
-    return User;
+    return Channel;
 };

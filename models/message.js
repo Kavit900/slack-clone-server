@@ -1,4 +1,4 @@
-import { Sequelize, DataTypes } from "sequelize/types";
+import {DataTypes} from 'sequelize';
 
 export default (sequelize, DataTypes) => {
     const Message = sequelize.define('message', {
@@ -15,5 +15,5 @@ export default (sequelize, DataTypes) => {
         });
     };
 
-    return User;
+    return Message;
 };
