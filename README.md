@@ -9,6 +9,7 @@
 7. npm i graphql
 8. npm i graphql-tools
 9. npm i sequelize
+10. npm install pg
 
 ### Postgres Commands
 -> Install Postgres Database 
