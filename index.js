@@ -21,7 +21,7 @@ app.use(path, bodyParser.json());
 
 server.applyMiddleware({ app, path });
 
- models.sequelize.sync().then(() => {
+ models.sequelize.sync({force: true}).then(() => {
   app.listen({ port: 8080 }, () =>
   console.log(`🚀 Server ready at http://localhost:8080${server.graphqlPath}`)
   )
