@@ -16,5 +16,4 @@
 -> Start the server - brew services start postgresql
 -> Stop the server - brew services stop postgresql
 -> open postgres terminal - psql postgres (postgres is default user)
--> create database command - create database slack;
--> 
+-> create database command - create database slack
