@@ -17,3 +17,7 @@
 -> Stop the server - brew services stop postgresql
 -> open postgres terminal - psql postgres (postgres is default user)
 -> create database command - create database slack
+
+### Important Dependencies
+
+-> npm install merge-graphql-schemas
