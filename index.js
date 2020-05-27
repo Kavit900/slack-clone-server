@@ -8,7 +8,11 @@ import models from './models';
 import path from 'path';
 import { fileLoader, mergeTypes, mergeResolvers } from 'merge-graphql-schemas';
 
+import cors from 'cors';
+
 const app = express();
+
+app.use(cors('*'));
  
 const types = fileLoader(path.join(__dirname, './schema')); 
 
